@@ -9,10 +9,10 @@ function render(html) {
 function greet() {
   const name = prompt("What is your name?")
   if (!name) {
-    render("<h1>ANSWER THE PROMPTS</h1>")
+    render("<h1>>Please fill in the prompts</h1>")
     return
   }
-  render("<p>Hello, " + name + ". Nice to meet you!</p>")
+  render("<p>Hello, " + name + ". Hello!</p> Welcome to the site")
 }
 
 /* 
@@ -21,13 +21,13 @@ function greet() {
 function averageNumbers() {
   const input = prompt("Enter a list of numbers separated by commas:")
   if (!input) {
-    render("<h1>ANSWER THE PROMPTS</h1>")
+    render("<h1>Please fill in the prompts</h1>")
     return
   }
 
   const nums = input.split(",").map(n => parseFloat(n.trim())).filter(n => !isNaN(n))
   if (nums.length === 0) {
-    render("<p>No valid numbers provided.</p>")
+    render("<p>No real numbers provided.</p>")
     return
   }
 
@@ -56,12 +56,12 @@ function randomBetween() {
   const max = parseInt(prompt("Enter a maximum number:"))
 
   if (isNaN(min) || isNaN(max)) {
-    render("<h1>ANSWER THE PROMPTS</h1>")
+    render("<h1>>Please fill in the prompts</h1>")
     return
   }
 
   if (min >= max) {
-    render("<p>MAKE YOUR MIN LESS THAN YOUR MAX</p>")
+    render("<p>make sure the smaller number is first</p>")
     return
   }
 
@@ -84,7 +84,7 @@ function clearOutput() {
 function changeTitle() {
   const newTitle = prompt("Enter a new page title:")
   if (!newTitle) {
-    render("<p>ANSWER THE PROMPTS</p>")
+    render("<p>>Please fill in the prompts</p>")
     return
   }
   document.title = newTitle
@@ -114,7 +114,7 @@ function doubleNumber() {
   const input = prompt("Enter a number to double:")
   const num = parseFloat(input)
   if (isNaN(num)) {
-    render("<h1>ANSWER THE PROMPTS</h1>")
+    render("<h1>>Please fill in the prompts</h1>")
     return
   }
   render(`<p>${num} doubled is ${num * 2}.</p>`)
