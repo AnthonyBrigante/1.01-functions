@@ -1,4 +1,4 @@
-:root {
+root {
   --bs-primary: #b45309;   /* burnt orange */
   --bs-secondary: #78350f; /* chestnut brown */
   --bs-info: #d97706;      /* amber */
@@ -41,7 +41,7 @@ main {
 }
 #btnGreet:hover { background-color: #9a3412; }
 
-#btnAvg {
+#btnTitle {
   background-color: #15803d;
   border-color: #166534;
   color: #fff;
@@ -68,3 +68,17 @@ main {
   color: #fff;
 }
 #btnClear:hover { background-color: #991b1b; }
+
+#btnColor {
+  background-color: #d9dc26;
+  border-color: #c4c700;
+  color: #fff;
+}
+#btnColor:hover { background-color: #c9cc00; }
+
+#btnDouble {
+  background-color: #2641dc;
+  border-color: #1d1b99;
+  color: #fff;
+}
+#btnDouble:hover { background-color: #2e1b99; }
